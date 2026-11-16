@@ -342,7 +342,7 @@ if (now - lastValidSeen >= AUTO_REARM_MS) {
 目前設定：
 
 ```cpp
-const unsigned long AUTO_REARM_MS = 5000;
+const unsigned long AUTO_REARM_MS = 3000;
 ```
 
 例如無人機進入 RFID 感應區並成功加分後，系統會先鎖定。
