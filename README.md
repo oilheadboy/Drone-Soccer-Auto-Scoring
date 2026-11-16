@@ -331,7 +331,7 @@ if (!scoringArmed) {
 lastValidSeen = millis();
 ```
 
-當系統已經鎖定，而且連續 5 秒都沒有收到有效 EPC，就會自動解除鎖定。
+當系統已經鎖定，而且連續 3 秒都沒有收到有效 EPC，就會自動解除鎖定。
 
 ```cpp
 if (now - lastValidSeen >= AUTO_REARM_MS) {
