@@ -579,7 +579,7 @@ WAITING FOR TAG EXIT...
 | CONFIRM_MS | 2000 ms | EPC 確認時間 |
 | MIN_CONFIRM_GAP_MS | 120 ms | 兩次有效確認的最小間隔 |
 | REQUIRED_READS | 3 | EPC 確認次數 |
-| AUTO_REARM_MS | 5000 ms | 自動解鎖等待時間 |
+| AUTO_REARM_MS | 3000 ms | 自動解鎖等待時間 |
 | MANUAL_REARM_MS | 3000 ms | 手動解鎖安全時間 |
 | MAX_FRAME | 96 Bytes | RFID 封包緩衝區大小 |
 | score | 00～99 | 分數顯示範圍 |
