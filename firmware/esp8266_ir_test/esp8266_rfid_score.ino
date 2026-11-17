@@ -25,8 +25,8 @@ const unsigned long RFID_POLL_MS = 300;
 const unsigned long CONFIRM_MS = 2000;
 const unsigned long MIN_CONFIRM_GAP_MS = 120;
 
-// 連續 5 秒沒收到有效 EPC，自動解鎖
-const unsigned long AUTO_REARM_MS = 5000;
+// 連續 3 秒沒收到有效 EPC，自動解鎖
+const unsigned long AUTO_REARM_MS = 3000;
 
 // 手動 R 解鎖安全等待時間
 const unsigned long MANUAL_REARM_MS = 3000;
@@ -464,7 +464,7 @@ void setup() {
 
   Serial.println();
   Serial.println("RFID AUTO SCORE V4 READY");
-  Serial.println("AUTO REARM = 5000 ms");
+  Serial.println("AUTO REARM = 3000 ms");
   Serial.println("Commands: R / C / S");
 
   lastPoll = millis();
